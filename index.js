@@ -1,24 +1,30 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
-
-
+let votingAge = 0;
+if(votingAge < "18"){
+  console.log("This is true!");
+} 
 
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
-
+let votingAge = 0;
+if(votingAge = "18"){
+  console.log("This is true!");
+} 
 
 
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
-
-
+Number('1999');
 
 
 //Task d: Write a function to multiply a*b 
-
+function multi(a, b) {
+    return a * b;
+}
 
 
 
@@ -27,7 +33,10 @@
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
 
-
+function dogYears(a) {
+    return a * 7;
+    console.log(dogYears)
+}
 
 
 
@@ -50,8 +59,32 @@
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
 
+function dogFeeder(a,b) {
+    if (a <= 5 && b >= 1) {
+      return  a * 0.05;
+      console.log(dogFeeder(a, b))
+    } else if (a <= 10 && b >= 1) {
+      return  a * 0.04;
+      console.log(dogFeeder(a, b))
+    } else if (a <= 15 && b >= 1) {
+      return  a * 0.03;
+      console.log(dogFeeder(a, b))
+    } else if (a > 15 && b >= 1) {
+      return  a * 0.02;
+      console.log(dogFeeder(a, b))
+    } else if (a <= 5 && b <= 0.33) {
+      return  a * 0.1;
+      console.log(string.dogFeeder(a, b))
+    } else if (a <= 10 && b <= 0.583) {
+      return  a * 0.05;
+      console.log(string.dogFeeder(a, b))
+    } else if (a <= 15 && b <= 0.99) {
+      return  a * 0.04;
+      console.log(string.dogFeeder(a, b))
+    } 
+  }
 
-
+  dogFeeder(15,1)
 
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
@@ -60,19 +93,46 @@
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
+var rockpaperscissors = ["rock", "paper", "scissors"];
+
+function game(turna,turnb) {
+    turna =     rockpaperscissors.indexOf(turna);
+    turnb = rockpaperscissors.indexOf(turnb);
+    if (turna == turnb) {
+        return "Both is the winner";
+    }
+    if (turna == rockpaperscissors.length - 1 && turnb == 0) {
+        return "B is the winner";
+    }
+    if (turnb == rockpaperscissors.length - 1 && turna == 0) {
+        return "A is the winner";
+    }
+    if (turna > turnb) {
+        return "A is the winner";
+    } else {
+        return "B is the winner";
+    }
+}
   
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
 
-
-
+function kmtoMiles(a) {
+    return a / 1.609
+    console.log(kmtoMiles(a))
+}
+)
 
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-  
+function fttoCM(a) {
+    return a * 30.48
+    console.log(fttoCM(a))
+}
+)
+
 
 
 
