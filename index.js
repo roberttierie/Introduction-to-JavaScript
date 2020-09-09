@@ -134,17 +134,25 @@ function fttoCM(a) {
 )
 
 
-
-
+function lessthanorequaltoZero(a) {
+    if a <= 0  {
+    return "True";
+} else {
+    return false;
+}
+}
 
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
-
-
-
+function annoyingSong(a) {
+    for(let i = a; i > 0; i--) {
+        console.log(i + " bottles of    soda on the wall, take one down pass it around " + (i - 1) + ' bottles of soda on the wall');
+    }
+    
+}
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
@@ -154,9 +162,28 @@ function fttoCM(a) {
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
 
-  
+
+function grade(a) {
+    if (a >= 90)  {
+      console.log("You got an A");
+    return a
+  } else if ( a >= 80) {
+        console.log("You got a B");
+    return a
+  } else if ( a >= 70) {
+        console.log("You got a C");
+    return a 
+  } else if ( a >= 60) {
+        console.log("You got a D");
+    return a
+  } else {
+      console.log("You failed");
+    return a
+  }
+    
+  }
+
   
 
 /************************************************************** Stretch **************************************************************/
